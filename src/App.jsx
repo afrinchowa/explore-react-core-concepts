@@ -14,6 +14,9 @@ function App() {
   const handleClick2 = () =>{
     alert('button 2 clicked ');
   }
+  const handleClick4 = () => {
+    alert('practice button clicked')
+  }
 
   const addToFive = (num) => {
     alert(num + 5);
@@ -28,6 +31,8 @@ function App() {
        {/*button onclick="handleClick()">click me</button>  */}
       <button onClick={handleClick}>Click me</button>   
       <button onClick={handleClick2}>Click me 2</button>   
+      <button onClick={handleClick4}>click me 4</button>
+      <button onClick={() =>{alert('5th button clicked me')}}> click me 5</button>
       <button onClick={() =>{alert('third clicked')}}>Click me Third</button>   
 {/* vajaila */}
       <button onClick={() => addToFive(3)}>Four</button>
